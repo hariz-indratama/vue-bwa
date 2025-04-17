@@ -1,15 +1,17 @@
 <script setup>
-// Composition API
-import { useProductStore } from '@/stores/product';
-import { useCounterStore } from '@/stores/counter';
-
-const counter = useCounterStore()
-const product = useProductStore()
-
+import HeroSection from '@/components/page/HomePage/HeroSection.vue';
+import Categories from '@/components/page/HomePage/Categories.vue';
+import Items from '@/components/page/HomePage/Items.vue';
 </script>
 
 <template>
   <main>
-  <h3>This is Home Page</h3>
+   <HeroSection/>
+   <Categories/>
+   <Items/>
+
+   
+
+   
   </main>
 </template>
